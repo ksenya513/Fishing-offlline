@@ -1,8 +1,8 @@
 #include "Fish.hpp"
 
-Fish::Fish(const std::string &rarity, const std::string &name, int cost, int weight) : rarity_(rarity), name_(name), cost_(cost), weight_(weight) {}
+Fish::Fish(const std::string &name, int cost, int weight) : name_(name), cost_(cost), weight_(weight) {}
 
-std::string Fish::getRarity() const { return rarity_; }
+std::string Fish::getRarity() const { return "common"; }
 
 std::string Fish::getName() const { return name_; }
 

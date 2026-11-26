@@ -11,9 +11,9 @@ class Fish {
     int weight_;
 
   public:
-    explicit Fish(const std::string &rarity, const std::string &name, int cost, int weight);
+    explicit Fish(const std::string &name, int cost, int weight);
     virtual ~Fish() = default;
-    std::string getRarity() const;
+    virtual std::string getRarity() const;
     std::string getName() const;
     int getCost() const;
     int getWeight() const;
